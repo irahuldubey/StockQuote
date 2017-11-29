@@ -10,11 +10,13 @@ import XCTest
 
 class StocksViewModelTests: XCTestCase {
   
+  ///Additionally we can also create MOCKClass and override the MOCKService class to add any futher properties or functions
+  ///Like we can add stubs and add methods for different fetch services types
+  
   var stockWSViewModel: StocksViewModel?
   var mockedService: MockStockWebService?
   
   let mockStockQuoteObject = StocksQuoteBase.init(with: "84.9200", askSize: 400, bidPrice: "84.7800", bidSize: 1500, lastTradedPrice: "84.8800", lastExtendedHoursTradePrice: "84.9000", previousClose: "83.8700", adjustedPreviousClose: "83.8700", prviousCloseDate: "2017-11-27", symbol: "MSFT", tradingHalted: false, hasTraded: true, lastTradePriceSource: "consolidated", updatedAt: "2017-11-28T22:46:56Z", instrument: "https://api.robinhood.com/instruments/50810c35-d215-4866-9758-0ada4ac79ffa/")
-
   
   override func setUp() {
     super.setUp()

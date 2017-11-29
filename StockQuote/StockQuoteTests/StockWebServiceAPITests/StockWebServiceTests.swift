@@ -10,6 +10,8 @@ import XCTest
 
 class StockWebServiceTests: XCTestCase {
   
+  ///As of now we are doing Async network call to the server and getting the response, we can also use the stubbed JSON and use the same to unit tests this class
+  
   ///Instance of the StockWebService
   var stockWebService: StockWebService!
   
@@ -23,6 +25,7 @@ class StockWebServiceTests: XCTestCase {
     stockWebService = nil
   }
   
+  /// Test that Fetch WebService calls returns success for the Valid Symbols sent to server
   func testFetchStockServiceCallSucceedsForValidSymbols() {
     
     let expectationObj = expectation(description: "StocksWebService")
@@ -43,6 +46,7 @@ class StockWebServiceTests: XCTestCase {
     waitForExpectations(timeout: 10.0, handler: nil)
   }
   
+  /// Test that Fetch WebService calls returns failure for the nil Symbols sent to server
   func testFetchStockServiceCallFailureForNilSymbols() {
     let expectationObj = expectation(description: "StocksWebService")
     do {

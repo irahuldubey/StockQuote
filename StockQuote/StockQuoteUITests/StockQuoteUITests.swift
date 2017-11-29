@@ -9,28 +9,78 @@
 import XCTest
 
 class StockQuoteUITests: XCTestCase {
-        
-    override func setUp() {
-        super.setUp()
-        
-        // Put setup code here. This method is called before the invocation of each test method in the class.
-        
-        // In UI tests it is usually best to stop immediately when a failure occurs.
-        continueAfterFailure = false
-        // UI tests must launch the application that they test. Doing this in setup will make sure it happens for each test method.
-        XCUIApplication().launch()
-
-        // In UI tests it’s important to set the initial state - such as interface orientation - required for your tests before they run. The setUp method is a good place to do this.
-    }
+  
+  var app: XCUIApplication!
+  
+  override func setUp() {
+    super.setUp()
     
-    override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-        super.tearDown()
-    }
+    // In UI tests it is usually best to stop immediately when a failure occurs.
+    continueAfterFailure = false
     
-    func testExample() {
-        // Use recording to get started writing UI tests.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-    }
+    // UI tests must launch the application that they test. Doing this in setup will make sure it happens for each test method.
+    app = XCUIApplication()
     
+    ///Launch the application
+    app.launch()
+  }
+  
+  override func tearDown() {
+    // Put teardown code here. This method is called after the invocation of each test method in the class.
+    super.tearDown()
+  }
+  
+  func testRowTitleAsAppleExists() {
+    XCTAssertTrue(app.staticTexts["APPLE"].exists, "Apple does not exist as one of the key for stocks")
+  }
+  
+  func testRowTitleAsNIKEExists() {
+    XCTAssertTrue(app.staticTexts["NIKE"].exists, "NIKE does not exist as one of the key for stocks")
+  }
+  
+  func testRowTitleAsFACEBOOKExists() {
+    XCTAssertTrue(app.staticTexts["FACEBOOK"].exists, "FACEBOOK does not exist as one of the key for stocks")
+  }
+  
+  func testRowTitleAsGOOGLEExists() {
+    XCTAssertTrue(app.staticTexts["GOOGLE"].exists, "GOOGLE does not exist as one of the key for stocks")
+  }
+  
+  func testRowTitleAsMICROSOFTExists() {
+    XCTAssertTrue(app.staticTexts["MICROSOFT"].exists, "MICROSOFT does not exist as one of the key for stocks")
+  }
+  
+  func testIfStockDetailPageIsPresented() {
+    app.staticTexts["FACEBOOK"].tap()
+    XCTAssertTrue(app.navigationBars["Stock Detail"].exists, "Stocks Details is not Presented")
+  }
+  
+  func testIfHomePageIsPrensentedWithTitleStockWatchlist() {
+    XCTAssertTrue(app.navigationBars["Stocks Watchlist"].exists, "Stocks Details is not Presented")
+  }
+  
+  func testRowTitleAsApple() {
+    app.staticTexts["APPLE"].tap()
+    XCTAssert(app.staticTexts["AAPL"].exists)
+  }
+  
+  func testRowTitleAsNIKE() {
+    app.staticTexts["NIKE"].tap()
+    XCTAssert(app.staticTexts["NKE"].exists)
+  }
+  
+  func testRowTitleAsFACEBOOK() {
+    app.staticTexts["FACEBOOK"].tap()
+    XCTAssert(app.staticTexts["FB"].exists)
+  }
+  
+  func testRowTitleAsGOOGLE() {
+    app.staticTexts["GOOGLE"].tap()
+    XCTAssert(app.staticTexts["GOOG"].exists)
+  }
+  
+  func testRowTitleAsMICROSOFT() {
+    app.staticTexts["MICROSOFT"].tap()
+    XCTAssert(app.staticTexts["MSFT"].exists)
+  }
 }
