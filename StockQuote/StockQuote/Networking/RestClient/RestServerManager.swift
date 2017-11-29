@@ -8,7 +8,6 @@
 
 import Foundation
 
-
 ///Class that makes service calls to the server
 final class RestServerManager {
   

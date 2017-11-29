@@ -46,6 +46,7 @@ class StockWebServiceTests: XCTestCase {
     waitForExpectations(timeout: 10.0, handler: nil)
   }
   
+  
   /// Test that Fetch WebService calls returns failure for the nil Symbols sent to server
   func testFetchStockServiceCallFailureForNilSymbols() {
     let expectationObj = expectation(description: "StocksWebService")

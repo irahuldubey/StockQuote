@@ -39,7 +39,7 @@ class StocksViewModelTests: XCTestCase {
   }
   
   func testWhenValidSymbolsArePassedAndFetchApiIsCalledValidStockItemsAreReturned() {
-    
+
     mockedService?.fetchStockPricesClosure = { (symbols, completion) in
       completion(.success(stocks: [self.mockStockQuoteObject])
       )}
@@ -123,5 +123,4 @@ class StocksViewModelTests: XCTestCase {
       }
     })
   }
-  
 }

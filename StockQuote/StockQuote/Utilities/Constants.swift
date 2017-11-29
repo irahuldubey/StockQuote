@@ -8,6 +8,8 @@
 
 import Foundation
 
+///Moving on if this becomes fatter we can move them to individual files, This helps in management and modifications later
+
 /// Indentifiers for View Controllers
 struct ViewControllerIdentifier {
   static let stocksHomeViewController = "StocksHomeViewController"
@@ -29,6 +31,7 @@ struct StoryboardIdentifier {
   static let main = "Main"
 }
 
+/// This can be moved to Formatter class later as of now no need to create a class for Formatter so I added to the Utility Struct
 struct Utility {
   static func convertStockPrice(stockPrice: String) -> String? {
     if let doubleValue = Double(stockPrice) {
