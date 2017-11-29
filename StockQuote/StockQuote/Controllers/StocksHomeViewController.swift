@@ -21,7 +21,7 @@ class StocksHomeViewController: UITableViewController, ActivityIndicatorProtocol
   
   /// Intance of the view model, View Model add the Presentation and Networking Logic to be used in this view controller.
   /// View Model is one-one mapping betweent the ViewController and ViewModel.
-  private lazy var stocksViewModel = StocksViewModel()
+  private lazy var stocksViewModel = StocksViewModel(withStockServiceAPI: StockWebService())
   
   ///As of now hardcoding these stocks later on this can be searched and customized as per the user
   ///User can add stocks he is interested in and delete the stocks from his watch list as well.

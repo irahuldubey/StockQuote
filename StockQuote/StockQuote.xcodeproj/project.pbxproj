@@ -31,6 +31,17 @@
 		BB025A6B1FCE8A0300EA1691 /* StocksServiceEnumerations.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB025A561FCE443600EA1691 /* StocksServiceEnumerations.swift */; };
 		BB79CD981FCE8AA000DDD43C /* RestAPIHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB025A471FCE328100EA1691 /* RestAPIHelper.swift */; };
 		BB79CD991FCE928500DDD43C /* StocksWebserviceError.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB025A5A1FCE4B7600EA1691 /* StocksWebserviceError.swift */; };
+		BB79CDD41FCF2B5A00DDD43C /* MockStockWebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB79CDD31FCF2B5A00DDD43C /* MockStockWebService.swift */; };
+		BB79CDD61FCF2CD900DDD43C /* StocksViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB79CDD51FCF2CD900DDD43C /* StocksViewModelTests.swift */; };
+		BB79CDD71FCF2D8F00DDD43C /* MockStockWebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB79CDD31FCF2B5A00DDD43C /* MockStockWebService.swift */; };
+		BB79CDD81FCF362200DDD43C /* RestEnumerations.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB025A491FCE328B00EA1691 /* RestEnumerations.swift */; };
+		BB79CDD91FCF363700DDD43C /* JSONUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBC88F5E1FCD192900C25F6D /* JSONUtilities.swift */; };
+		BB79CDDA1FCF364400DDD43C /* StocksServiceParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBC88F641FCD1D3D00C25F6D /* StocksServiceParser.swift */; };
+		BB79CDDB1FCF365000DDD43C /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB025A4C1FCE329900EA1691 /* API.swift */; };
+		BB79CDDC1FCF366B00DDD43C /* APIResponseKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB025A521FCE32BA00EA1691 /* APIResponseKeys.swift */; };
+		BB79CDDD1FCF367200DDD43C /* APIParams.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB025A4E1FCE32A400EA1691 /* APIParams.swift */; };
+		BB79CE161FCF5D3100DDD43C /* StockData.json in Resources */ = {isa = PBXBuildFile; fileRef = BB79CE151FCF5D3100DDD43C /* StockData.json */; };
+		BB79CE191FCF5DFA00DDD43C /* StockWebServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB79CE181FCF5DFA00DDD43C /* StockWebServiceTests.swift */; };
 		BB9D1D831FCCE83C00376B6F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB9D1D821FCCE83C00376B6F /* AppDelegate.swift */; };
 		BB9D1D881FCCE83C00376B6F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB9D1D861FCCE83C00376B6F /* Main.storyboard */; };
 		BB9D1D8A1FCCE83C00376B6F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB9D1D891FCCE83C00376B6F /* Assets.xcassets */; };
@@ -76,6 +87,10 @@
 		BB025A5A1FCE4B7600EA1691 /* StocksWebserviceError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StocksWebserviceError.swift; sourceTree = "<group>"; };
 		BB025A631FCE6D7800EA1691 /* Double+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Extension.swift"; sourceTree = "<group>"; };
 		BB025A681FCE7FAB00EA1691 /* Date+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
+		BB79CDD31FCF2B5A00DDD43C /* MockStockWebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockStockWebService.swift; sourceTree = "<group>"; };
+		BB79CDD51FCF2CD900DDD43C /* StocksViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StocksViewModelTests.swift; sourceTree = "<group>"; };
+		BB79CE151FCF5D3100DDD43C /* StockData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = StockData.json; sourceTree = "<group>"; };
+		BB79CE181FCF5DFA00DDD43C /* StockWebServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockWebServiceTests.swift; sourceTree = "<group>"; };
 		BB9D1D7F1FCCE83C00376B6F /* StockQuote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StockQuote.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB9D1D821FCCE83C00376B6F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BB9D1D871FCCE83C00376B6F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -128,6 +143,39 @@
 			path = APIConfiguration;
 			sourceTree = "<group>";
 		};
+		BB79CDD01FCF2B2A00DDD43C /* Testing */ = {
+			isa = PBXGroup;
+			children = (
+				BB79CDD21FCF2B4600DDD43C /* Stubs */,
+				BB79CDD11FCF2B3F00DDD43C /* Mocks */,
+			);
+			path = Testing;
+			sourceTree = "<group>";
+		};
+		BB79CDD11FCF2B3F00DDD43C /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				BB79CDD31FCF2B5A00DDD43C /* MockStockWebService.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		BB79CDD21FCF2B4600DDD43C /* Stubs */ = {
+			isa = PBXGroup;
+			children = (
+				BB79CE151FCF5D3100DDD43C /* StockData.json */,
+			);
+			path = Stubs;
+			sourceTree = "<group>";
+		};
+		BB79CE171FCF5DB400DDD43C /* StockWebServiceAPITests */ = {
+			isa = PBXGroup;
+			children = (
+				BB79CE181FCF5DFA00DDD43C /* StockWebServiceTests.swift */,
+			);
+			path = StockWebServiceAPITests;
+			sourceTree = "<group>";
+		};
 		BB9D1D761FCCE83C00376B6F = {
 			isa = PBXGroup;
 			children = (
@@ -166,8 +214,7 @@
 		BB9D1D961FCCE83C00376B6F /* StockQuoteTests */ = {
 			isa = PBXGroup;
 			children = (
-				BB9D1DAF1FCCE8D200376B6F /* ViewControllersTest */,
-				BB9D1DAE1FCCE8C500376B6F /* ViewTests */,
+				BB79CE171FCF5DB400DDD43C /* StockWebServiceAPITests */,
 				BB9D1DAD1FCCE8BE00376B6F /* ViewModelTests */,
 				BB9D1D971FCCE83C00376B6F /* StockQuoteTests.swift */,
 				BB9D1D991FCCE83C00376B6F /* Info.plist */,
@@ -212,6 +259,7 @@
 		BB9D1DA61FCCE86500376B6F /* Networking */ = {
 			isa = PBXGroup;
 			children = (
+				BB79CDD01FCF2B2A00DDD43C /* Testing */,
 				BBC88F5C1FCD190A00C25F6D /* RestClient */,
 				BBC88F5B1FCD18FF00C25F6D /* StockWebServiceAPI */,
 			);
@@ -273,22 +321,9 @@
 		BB9D1DAD1FCCE8BE00376B6F /* ViewModelTests */ = {
 			isa = PBXGroup;
 			children = (
+				BB79CDD51FCF2CD900DDD43C /* StocksViewModelTests.swift */,
 			);
 			path = ViewModelTests;
-			sourceTree = "<group>";
-		};
-		BB9D1DAE1FCCE8C500376B6F /* ViewTests */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ViewTests;
-			sourceTree = "<group>";
-		};
-		BB9D1DAF1FCCE8D200376B6F /* ViewControllersTest */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ViewControllersTest;
 			sourceTree = "<group>";
 		};
 		BB9D1DB91FCCEAB600376B6F /* CustomCells */ = {
@@ -406,6 +441,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BB79CE161FCF5D3100DDD43C /* StockData.json in Resources */,
 				BB9D1D8D1FCCE83C00376B6F /* LaunchScreen.storyboard in Resources */,
 				BB9D1D8A1FCCE83C00376B6F /* Assets.xcassets in Resources */,
 				BB9D1D881FCCE83C00376B6F /* Main.storyboard in Resources */,
@@ -451,6 +487,7 @@
 				BB025A4F1FCE32A400EA1691 /* APIParams.swift in Sources */,
 				BB025A4D1FCE329900EA1691 /* API.swift in Sources */,
 				BB9D1DBB1FCCEAF300376B6F /* CustomStocksTableViewCell.swift in Sources */,
+				BB79CDD41FCF2B5A00DDD43C /* MockStockWebService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -459,17 +496,26 @@
 			buildActionMask = 2147483647;
 			files = (
 				BB79CD991FCE928500DDD43C /* StocksWebserviceError.swift in Sources */,
+				BB79CDDC1FCF366B00DDD43C /* APIResponseKeys.swift in Sources */,
 				BB025A651FCE6EB900EA1691 /* UIVIewController+Extension.swift in Sources */,
 				BB025A621FCE6C2100EA1691 /* StocksQuoteBase.swift in Sources */,
 				BB025A5F1FCE619B00EA1691 /* StockWebServiceAPI.swift in Sources */,
 				BB025A611FCE622900EA1691 /* RestServerManager.swift in Sources */,
+				BB79CDDA1FCF364400DDD43C /* StocksServiceParser.swift in Sources */,
 				BB9D1DB81FCCEA4400376B6F /* StocksDetailViewController.swift in Sources */,
 				BB9D1DB51FCCEA2700376B6F /* StocksHomeViewController.swift in Sources */,
+				BB79CDDD1FCF367200DDD43C /* APIParams.swift in Sources */,
+				BB79CDD81FCF362200DDD43C /* RestEnumerations.swift in Sources */,
+				BB79CE191FCF5DFA00DDD43C /* StockWebServiceTests.swift in Sources */,
 				BB9D1DC21FCCECAF00376B6F /* ImageDownloadManager.swift in Sources */,
 				BB025A6A1FCE89FD00EA1691 /* StockWebService.swift in Sources */,
 				BB79CD981FCE8AA000DDD43C /* RestAPIHelper.swift in Sources */,
 				BB025A5E1FCE619800EA1691 /* StocksViewModel.swift in Sources */,
+				BB79CDDB1FCF365000DDD43C /* API.swift in Sources */,
+				BB79CDD91FCF363700DDD43C /* JSONUtilities.swift in Sources */,
+				BB79CDD61FCF2CD900DDD43C /* StocksViewModelTests.swift in Sources */,
 				BB9D1DC51FCCECC500376B6F /* Constants.swift in Sources */,
+				BB79CDD71FCF2D8F00DDD43C /* MockStockWebService.swift in Sources */,
 				BB025A6B1FCE8A0300EA1691 /* StocksServiceEnumerations.swift in Sources */,
 				BB9D1D981FCCE83C00376B6F /* StockQuoteTests.swift in Sources */,
 				BB9D1DBC1FCCEAF300376B6F /* CustomStocksTableViewCell.swift in Sources */,

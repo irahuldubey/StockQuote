@@ -15,18 +15,23 @@ internal final class StocksViewModel {
   ///Failure Binded Text
   internal private(set) var errorText: String?
   
-  private let stocksWebService: StockWebServiceAPI = StockWebService()
+  private let stocksWebService: StockWebServiceAPI
   
   //MARK: - Initializer
   
   /// Initializer should be private so that it should be initialized from a different class
   /// Add dependency injection so that it can be easily tested from the Test Classes
-  init() { }
+  init(withStockServiceAPI stocksWebService: StockWebServiceAPI) {
+    self.stocksWebService = stocksWebService
+  }
   
   func fetchStocks(for symbols: [String], withCompletionHandler completion: @escaping (_ stock: [StocksQuoteBase], _ errorString: String?) -> ()){
     
     ///Bind the symbols else return from the function
-    guard symbols.count > 0 else { return }
+    guard symbols.count > 0 else {
+      completion([], "Invalid Parameters")
+      return
+    }
     
     do {
       try stocksWebService.fetchStockPrices(with: symbols) {(stocksServiceResponse) in
@@ -49,7 +54,5 @@ internal final class StocksViewModel {
     print("Deinitialized StocksViewModel")
   }
   
-  //MARK: -Table View Decoration
- 
-  
+  //MARK: -Table View Decoration  
 }
