@@ -7,6 +7,30 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BB025A461FCE324100EA1691 /* RestServerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB025A451FCE324100EA1691 /* RestServerManager.swift */; };
+		BB025A481FCE328100EA1691 /* RestAPIHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB025A471FCE328100EA1691 /* RestAPIHelper.swift */; };
+		BB025A4A1FCE328B00EA1691 /* RestEnumerations.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB025A491FCE328B00EA1691 /* RestEnumerations.swift */; };
+		BB025A4D1FCE329900EA1691 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB025A4C1FCE329900EA1691 /* API.swift */; };
+		BB025A4F1FCE32A400EA1691 /* APIParams.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB025A4E1FCE32A400EA1691 /* APIParams.swift */; };
+		BB025A511FCE32AB00EA1691 /* APIKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB025A501FCE32AB00EA1691 /* APIKeys.swift */; };
+		BB025A531FCE32BA00EA1691 /* APIResponseKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB025A521FCE32BA00EA1691 /* APIResponseKeys.swift */; };
+		BB025A551FCE32C300EA1691 /* APIResponseValues.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB025A541FCE32C300EA1691 /* APIResponseValues.swift */; };
+		BB025A571FCE443600EA1691 /* StocksServiceEnumerations.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB025A561FCE443600EA1691 /* StocksServiceEnumerations.swift */; };
+		BB025A591FCE46D800EA1691 /* StocksQuoteBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB025A581FCE46D800EA1691 /* StocksQuoteBase.swift */; };
+		BB025A5B1FCE4B7600EA1691 /* StocksWebserviceError.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB025A5A1FCE4B7600EA1691 /* StocksWebserviceError.swift */; };
+		BB025A5C1FCE612700EA1691 /* StockWebServiceAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBC88F601FCD19A100C25F6D /* StockWebServiceAPI.swift */; };
+		BB025A5D1FCE612C00EA1691 /* StockWebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBC88F621FCD1A3200C25F6D /* StockWebService.swift */; };
+		BB025A5E1FCE619800EA1691 /* StocksViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB9D1DBD1FCCEC9600376B6F /* StocksViewModel.swift */; };
+		BB025A5F1FCE619B00EA1691 /* StockWebServiceAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBC88F601FCD19A100C25F6D /* StockWebServiceAPI.swift */; };
+		BB025A611FCE622900EA1691 /* RestServerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB025A451FCE324100EA1691 /* RestServerManager.swift */; };
+		BB025A621FCE6C2100EA1691 /* StocksQuoteBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB025A581FCE46D800EA1691 /* StocksQuoteBase.swift */; };
+		BB025A641FCE6D7800EA1691 /* Double+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB025A631FCE6D7800EA1691 /* Double+Extension.swift */; };
+		BB025A651FCE6EB900EA1691 /* UIVIewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBC88F591FCD168200C25F6D /* UIVIewController+Extension.swift */; };
+		BB025A691FCE7FAB00EA1691 /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB025A681FCE7FAB00EA1691 /* Date+Extension.swift */; };
+		BB025A6A1FCE89FD00EA1691 /* StockWebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBC88F621FCD1A3200C25F6D /* StockWebService.swift */; };
+		BB025A6B1FCE8A0300EA1691 /* StocksServiceEnumerations.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB025A561FCE443600EA1691 /* StocksServiceEnumerations.swift */; };
+		BB79CD981FCE8AA000DDD43C /* RestAPIHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB025A471FCE328100EA1691 /* RestAPIHelper.swift */; };
+		BB79CD991FCE928500DDD43C /* StocksWebserviceError.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB025A5A1FCE4B7600EA1691 /* StocksWebserviceError.swift */; };
 		BB9D1D831FCCE83C00376B6F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB9D1D821FCCE83C00376B6F /* AppDelegate.swift */; };
 		BB9D1D881FCCE83C00376B6F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB9D1D861FCCE83C00376B6F /* Main.storyboard */; };
 		BB9D1D8A1FCCE83C00376B6F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB9D1D891FCCE83C00376B6F /* Assets.xcassets */; };
@@ -19,13 +43,13 @@
 		BB9D1DBB1FCCEAF300376B6F /* CustomStocksTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB9D1DBA1FCCEAF300376B6F /* CustomStocksTableViewCell.swift */; };
 		BB9D1DBC1FCCEAF300376B6F /* CustomStocksTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB9D1DBA1FCCEAF300376B6F /* CustomStocksTableViewCell.swift */; };
 		BB9D1DBE1FCCEC9600376B6F /* StocksViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB9D1DBD1FCCEC9600376B6F /* StocksViewModel.swift */; };
-		BB9D1DBF1FCCEC9600376B6F /* StocksViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB9D1DBD1FCCEC9600376B6F /* StocksViewModel.swift */; };
 		BB9D1DC11FCCECAF00376B6F /* ImageDownloadManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB9D1DC01FCCECAF00376B6F /* ImageDownloadManager.swift */; };
 		BB9D1DC21FCCECAF00376B6F /* ImageDownloadManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB9D1DC01FCCECAF00376B6F /* ImageDownloadManager.swift */; };
 		BB9D1DC41FCCECC500376B6F /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB9D1DC31FCCECC500376B6F /* Constants.swift */; };
 		BB9D1DC51FCCECC500376B6F /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB9D1DC31FCCECC500376B6F /* Constants.swift */; };
-		BB9D1DC71FCCEDC500376B6F /* StocksModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB9D1DC61FCCEDC500376B6F /* StocksModel.swift */; };
-		BB9D1DC81FCCEDC500376B6F /* StocksModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB9D1DC61FCCEDC500376B6F /* StocksModel.swift */; };
+		BBC88F5A1FCD168200C25F6D /* UIVIewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBC88F591FCD168200C25F6D /* UIVIewController+Extension.swift */; };
+		BBC88F5F1FCD192900C25F6D /* JSONUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBC88F5E1FCD192900C25F6D /* JSONUtilities.swift */; };
+		BBC88F651FCD1D3D00C25F6D /* StocksServiceParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBC88F641FCD1D3D00C25F6D /* StocksServiceParser.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +63,19 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BB025A451FCE324100EA1691 /* RestServerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestServerManager.swift; sourceTree = "<group>"; };
+		BB025A471FCE328100EA1691 /* RestAPIHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestAPIHelper.swift; sourceTree = "<group>"; };
+		BB025A491FCE328B00EA1691 /* RestEnumerations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestEnumerations.swift; sourceTree = "<group>"; };
+		BB025A4C1FCE329900EA1691 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		BB025A4E1FCE32A400EA1691 /* APIParams.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIParams.swift; sourceTree = "<group>"; };
+		BB025A501FCE32AB00EA1691 /* APIKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIKeys.swift; sourceTree = "<group>"; };
+		BB025A521FCE32BA00EA1691 /* APIResponseKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIResponseKeys.swift; sourceTree = "<group>"; };
+		BB025A541FCE32C300EA1691 /* APIResponseValues.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIResponseValues.swift; sourceTree = "<group>"; };
+		BB025A561FCE443600EA1691 /* StocksServiceEnumerations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StocksServiceEnumerations.swift; sourceTree = "<group>"; };
+		BB025A581FCE46D800EA1691 /* StocksQuoteBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StocksQuoteBase.swift; sourceTree = "<group>"; };
+		BB025A5A1FCE4B7600EA1691 /* StocksWebserviceError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StocksWebserviceError.swift; sourceTree = "<group>"; };
+		BB025A631FCE6D7800EA1691 /* Double+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Extension.swift"; sourceTree = "<group>"; };
+		BB025A681FCE7FAB00EA1691 /* Date+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
 		BB9D1D7F1FCCE83C00376B6F /* StockQuote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StockQuote.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB9D1D821FCCE83C00376B6F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BB9D1D871FCCE83C00376B6F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -54,7 +91,11 @@
 		BB9D1DBD1FCCEC9600376B6F /* StocksViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StocksViewModel.swift; sourceTree = "<group>"; };
 		BB9D1DC01FCCECAF00376B6F /* ImageDownloadManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDownloadManager.swift; sourceTree = "<group>"; };
 		BB9D1DC31FCCECC500376B6F /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
-		BB9D1DC61FCCEDC500376B6F /* StocksModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StocksModel.swift; sourceTree = "<group>"; };
+		BBC88F591FCD168200C25F6D /* UIVIewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIVIewController+Extension.swift"; sourceTree = "<group>"; };
+		BBC88F5E1FCD192900C25F6D /* JSONUtilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONUtilities.swift; sourceTree = "<group>"; };
+		BBC88F601FCD19A100C25F6D /* StockWebServiceAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockWebServiceAPI.swift; sourceTree = "<group>"; };
+		BBC88F621FCD1A3200C25F6D /* StockWebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockWebService.swift; sourceTree = "<group>"; };
+		BBC88F641FCD1D3D00C25F6D /* StocksServiceParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StocksServiceParser.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +116,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BB025A4B1FCE329000EA1691 /* APIConfiguration */ = {
+			isa = PBXGroup;
+			children = (
+				BB025A4C1FCE329900EA1691 /* API.swift */,
+				BB025A4E1FCE32A400EA1691 /* APIParams.swift */,
+				BB025A501FCE32AB00EA1691 /* APIKeys.swift */,
+				BB025A521FCE32BA00EA1691 /* APIResponseKeys.swift */,
+				BB025A541FCE32C300EA1691 /* APIResponseValues.swift */,
+			);
+			path = APIConfiguration;
+			sourceTree = "<group>";
+		};
 		BB9D1D761FCCE83C00376B6F = {
 			isa = PBXGroup;
 			children = (
@@ -152,7 +205,6 @@
 			isa = PBXGroup;
 			children = (
 				BB9D1DBD1FCCEC9600376B6F /* StocksViewModel.swift */,
-				BB9D1DC61FCCEDC500376B6F /* StocksModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -160,6 +212,8 @@
 		BB9D1DA61FCCE86500376B6F /* Networking */ = {
 			isa = PBXGroup;
 			children = (
+				BBC88F5C1FCD190A00C25F6D /* RestClient */,
+				BBC88F5B1FCD18FF00C25F6D /* StockWebServiceAPI */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -167,6 +221,7 @@
 		BB9D1DA71FCCE86A00376B6F /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				BB025A581FCE46D800EA1691 /* StocksQuoteBase.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -182,6 +237,9 @@
 		BB9D1DA91FCCE87C00376B6F /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				BBC88F591FCD168200C25F6D /* UIVIewController+Extension.swift */,
+				BB025A631FCE6D7800EA1691 /* Double+Extension.swift */,
+				BB025A681FCE7FAB00EA1691 /* Date+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -239,6 +297,30 @@
 				BB9D1DBA1FCCEAF300376B6F /* CustomStocksTableViewCell.swift */,
 			);
 			path = CustomCells;
+			sourceTree = "<group>";
+		};
+		BBC88F5B1FCD18FF00C25F6D /* StockWebServiceAPI */ = {
+			isa = PBXGroup;
+			children = (
+				BBC88F601FCD19A100C25F6D /* StockWebServiceAPI.swift */,
+				BBC88F621FCD1A3200C25F6D /* StockWebService.swift */,
+				BBC88F641FCD1D3D00C25F6D /* StocksServiceParser.swift */,
+				BB025A561FCE443600EA1691 /* StocksServiceEnumerations.swift */,
+				BB025A5A1FCE4B7600EA1691 /* StocksWebserviceError.swift */,
+			);
+			path = StockWebServiceAPI;
+			sourceTree = "<group>";
+		};
+		BBC88F5C1FCD190A00C25F6D /* RestClient */ = {
+			isa = PBXGroup;
+			children = (
+				BB025A4B1FCE329000EA1691 /* APIConfiguration */,
+				BBC88F5E1FCD192900C25F6D /* JSONUtilities.swift */,
+				BB025A451FCE324100EA1691 /* RestServerManager.swift */,
+				BB025A471FCE328100EA1691 /* RestAPIHelper.swift */,
+				BB025A491FCE328B00EA1691 /* RestEnumerations.swift */,
+			);
+			path = RestClient;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -344,13 +426,30 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BB025A591FCE46D800EA1691 /* StocksQuoteBase.swift in Sources */,
 				BB9D1DBE1FCCEC9600376B6F /* StocksViewModel.swift in Sources */,
+				BBC88F651FCD1D3D00C25F6D /* StocksServiceParser.swift in Sources */,
 				BB9D1DB71FCCEA4400376B6F /* StocksDetailViewController.swift in Sources */,
+				BB025A641FCE6D7800EA1691 /* Double+Extension.swift in Sources */,
+				BBC88F5F1FCD192900C25F6D /* JSONUtilities.swift in Sources */,
+				BB025A5B1FCE4B7600EA1691 /* StocksWebserviceError.swift in Sources */,
+				BB025A461FCE324100EA1691 /* RestServerManager.swift in Sources */,
+				BB025A691FCE7FAB00EA1691 /* Date+Extension.swift in Sources */,
+				BB025A511FCE32AB00EA1691 /* APIKeys.swift in Sources */,
+				BB025A5C1FCE612700EA1691 /* StockWebServiceAPI.swift in Sources */,
+				BB025A531FCE32BA00EA1691 /* APIResponseKeys.swift in Sources */,
+				BB025A481FCE328100EA1691 /* RestAPIHelper.swift in Sources */,
 				BB9D1DB41FCCEA2700376B6F /* StocksHomeViewController.swift in Sources */,
 				BB9D1DC11FCCECAF00376B6F /* ImageDownloadManager.swift in Sources */,
-				BB9D1DC71FCCEDC500376B6F /* StocksModel.swift in Sources */,
+				BB025A4A1FCE328B00EA1691 /* RestEnumerations.swift in Sources */,
+				BBC88F5A1FCD168200C25F6D /* UIVIewController+Extension.swift in Sources */,
 				BB9D1DC41FCCECC500376B6F /* Constants.swift in Sources */,
+				BB025A551FCE32C300EA1691 /* APIResponseValues.swift in Sources */,
 				BB9D1D831FCCE83C00376B6F /* AppDelegate.swift in Sources */,
+				BB025A571FCE443600EA1691 /* StocksServiceEnumerations.swift in Sources */,
+				BB025A5D1FCE612C00EA1691 /* StockWebService.swift in Sources */,
+				BB025A4F1FCE32A400EA1691 /* APIParams.swift in Sources */,
+				BB025A4D1FCE329900EA1691 /* API.swift in Sources */,
 				BB9D1DBB1FCCEAF300376B6F /* CustomStocksTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -359,12 +458,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BB9D1DBF1FCCEC9600376B6F /* StocksViewModel.swift in Sources */,
+				BB79CD991FCE928500DDD43C /* StocksWebserviceError.swift in Sources */,
+				BB025A651FCE6EB900EA1691 /* UIVIewController+Extension.swift in Sources */,
+				BB025A621FCE6C2100EA1691 /* StocksQuoteBase.swift in Sources */,
+				BB025A5F1FCE619B00EA1691 /* StockWebServiceAPI.swift in Sources */,
+				BB025A611FCE622900EA1691 /* RestServerManager.swift in Sources */,
 				BB9D1DB81FCCEA4400376B6F /* StocksDetailViewController.swift in Sources */,
 				BB9D1DB51FCCEA2700376B6F /* StocksHomeViewController.swift in Sources */,
 				BB9D1DC21FCCECAF00376B6F /* ImageDownloadManager.swift in Sources */,
-				BB9D1DC81FCCEDC500376B6F /* StocksModel.swift in Sources */,
+				BB025A6A1FCE89FD00EA1691 /* StockWebService.swift in Sources */,
+				BB79CD981FCE8AA000DDD43C /* RestAPIHelper.swift in Sources */,
+				BB025A5E1FCE619800EA1691 /* StocksViewModel.swift in Sources */,
 				BB9D1DC51FCCECC500376B6F /* Constants.swift in Sources */,
+				BB025A6B1FCE8A0300EA1691 /* StocksServiceEnumerations.swift in Sources */,
 				BB9D1D981FCCE83C00376B6F /* StockQuoteTests.swift in Sources */,
 				BB9D1DBC1FCCEAF300376B6F /* CustomStocksTableViewCell.swift in Sources */,
 			);
