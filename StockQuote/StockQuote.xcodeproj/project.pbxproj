@@ -42,11 +42,11 @@
 		BB79CDDD1FCF367200DDD43C /* APIParams.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB025A4E1FCE32A400EA1691 /* APIParams.swift */; };
 		BB79CE161FCF5D3100DDD43C /* StockData.json in Resources */ = {isa = PBXBuildFile; fileRef = BB79CE151FCF5D3100DDD43C /* StockData.json */; };
 		BB79CE191FCF5DFA00DDD43C /* StockWebServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB79CE181FCF5DFA00DDD43C /* StockWebServiceTests.swift */; };
+		BB79CE221FCF63E300DDD43C /* StockQuoteUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB79CE211FCF63E300DDD43C /* StockQuoteUITests.swift */; };
 		BB9D1D831FCCE83C00376B6F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB9D1D821FCCE83C00376B6F /* AppDelegate.swift */; };
 		BB9D1D881FCCE83C00376B6F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB9D1D861FCCE83C00376B6F /* Main.storyboard */; };
 		BB9D1D8A1FCCE83C00376B6F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB9D1D891FCCE83C00376B6F /* Assets.xcassets */; };
 		BB9D1D8D1FCCE83C00376B6F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB9D1D8B1FCCE83C00376B6F /* LaunchScreen.storyboard */; };
-		BB9D1D981FCCE83C00376B6F /* StockQuoteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB9D1D971FCCE83C00376B6F /* StockQuoteTests.swift */; };
 		BB9D1DB41FCCEA2700376B6F /* StocksHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB9D1DB31FCCEA2700376B6F /* StocksHomeViewController.swift */; };
 		BB9D1DB51FCCEA2700376B6F /* StocksHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB9D1DB31FCCEA2700376B6F /* StocksHomeViewController.swift */; };
 		BB9D1DB71FCCEA4400376B6F /* StocksDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB9D1DB61FCCEA4400376B6F /* StocksDetailViewController.swift */; };
@@ -64,6 +64,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		BB79CE241FCF63E300DDD43C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BB9D1D771FCCE83C00376B6F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BB9D1D7E1FCCE83C00376B6F;
+			remoteInfo = StockQuote;
+		};
 		BB9D1D941FCCE83C00376B6F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BB9D1D771FCCE83C00376B6F /* Project object */;
@@ -91,6 +98,9 @@
 		BB79CDD51FCF2CD900DDD43C /* StocksViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StocksViewModelTests.swift; sourceTree = "<group>"; };
 		BB79CE151FCF5D3100DDD43C /* StockData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = StockData.json; sourceTree = "<group>"; };
 		BB79CE181FCF5DFA00DDD43C /* StockWebServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockWebServiceTests.swift; sourceTree = "<group>"; };
+		BB79CE1F1FCF63E200DDD43C /* StockQuoteUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StockQuoteUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB79CE211FCF63E300DDD43C /* StockQuoteUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockQuoteUITests.swift; sourceTree = "<group>"; };
+		BB79CE231FCF63E300DDD43C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BB9D1D7F1FCCE83C00376B6F /* StockQuote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StockQuote.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB9D1D821FCCE83C00376B6F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BB9D1D871FCCE83C00376B6F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -98,7 +108,6 @@
 		BB9D1D8C1FCCE83C00376B6F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BB9D1D8E1FCCE83C00376B6F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BB9D1D931FCCE83C00376B6F /* StockQuoteTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StockQuoteTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		BB9D1D971FCCE83C00376B6F /* StockQuoteTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockQuoteTests.swift; sourceTree = "<group>"; };
 		BB9D1D991FCCE83C00376B6F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BB9D1DB31FCCEA2700376B6F /* StocksHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StocksHomeViewController.swift; sourceTree = "<group>"; };
 		BB9D1DB61FCCEA4400376B6F /* StocksDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StocksDetailViewController.swift; sourceTree = "<group>"; };
@@ -114,6 +123,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		BB79CE1C1FCF63E200DDD43C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BB9D1D7C1FCCE83C00376B6F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -176,11 +192,29 @@
 			path = StockWebServiceAPITests;
 			sourceTree = "<group>";
 		};
+		BB79CE1A1FCF63CA00DDD43C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				BB9D1D991FCCE83C00376B6F /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		BB79CE201FCF63E300DDD43C /* StockQuoteUITests */ = {
+			isa = PBXGroup;
+			children = (
+				BB79CE211FCF63E300DDD43C /* StockQuoteUITests.swift */,
+				BB79CE231FCF63E300DDD43C /* Info.plist */,
+			);
+			path = StockQuoteUITests;
+			sourceTree = "<group>";
+		};
 		BB9D1D761FCCE83C00376B6F = {
 			isa = PBXGroup;
 			children = (
 				BB9D1D811FCCE83C00376B6F /* StockQuote */,
 				BB9D1D961FCCE83C00376B6F /* StockQuoteTests */,
+				BB79CE201FCF63E300DDD43C /* StockQuoteUITests */,
 				BB9D1D801FCCE83C00376B6F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -190,6 +224,7 @@
 			children = (
 				BB9D1D7F1FCCE83C00376B6F /* StockQuote.app */,
 				BB9D1D931FCCE83C00376B6F /* StockQuoteTests.xctest */,
+				BB79CE1F1FCF63E200DDD43C /* StockQuoteUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -214,10 +249,9 @@
 		BB9D1D961FCCE83C00376B6F /* StockQuoteTests */ = {
 			isa = PBXGroup;
 			children = (
+				BB79CE1A1FCF63CA00DDD43C /* Resources */,
 				BB79CE171FCF5DB400DDD43C /* StockWebServiceAPITests */,
 				BB9D1DAD1FCCE8BE00376B6F /* ViewModelTests */,
-				BB9D1D971FCCE83C00376B6F /* StockQuoteTests.swift */,
-				BB9D1D991FCCE83C00376B6F /* Info.plist */,
 			);
 			path = StockQuoteTests;
 			sourceTree = "<group>";
@@ -361,6 +395,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		BB79CE1E1FCF63E200DDD43C /* StockQuoteUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BB79CE261FCF63E300DDD43C /* Build configuration list for PBXNativeTarget "StockQuoteUITests" */;
+			buildPhases = (
+				BB79CE1B1FCF63E200DDD43C /* Sources */,
+				BB79CE1C1FCF63E200DDD43C /* Frameworks */,
+				BB79CE1D1FCF63E200DDD43C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BB79CE251FCF63E300DDD43C /* PBXTargetDependency */,
+			);
+			name = StockQuoteUITests;
+			productName = StockQuoteUITests;
+			productReference = BB79CE1F1FCF63E200DDD43C /* StockQuoteUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 		BB9D1D7E1FCCE83C00376B6F /* StockQuote */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = BB9D1D9C1FCCE83C00376B6F /* Build configuration list for PBXNativeTarget "StockQuote" */;
@@ -406,6 +458,11 @@
 				LastUpgradeCheck = 0910;
 				ORGANIZATIONNAME = "Rahul Dubey";
 				TargetAttributes = {
+					BB79CE1E1FCF63E200DDD43C = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = BB9D1D7E1FCCE83C00376B6F;
+					};
 					BB9D1D7E1FCCE83C00376B6F = {
 						CreatedOnToolsVersion = 9.1;
 						ProvisioningStyle = Automatic;
@@ -432,11 +489,19 @@
 			targets = (
 				BB9D1D7E1FCCE83C00376B6F /* StockQuote */,
 				BB9D1D921FCCE83C00376B6F /* StockQuoteTests */,
+				BB79CE1E1FCF63E200DDD43C /* StockQuoteUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		BB79CE1D1FCF63E200DDD43C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BB9D1D7D1FCCE83C00376B6F /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -458,6 +523,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		BB79CE1B1FCF63E200DDD43C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB79CE221FCF63E300DDD43C /* StockQuoteUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BB9D1D7B1FCCE83C00376B6F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -517,7 +590,6 @@
 				BB9D1DC51FCCECC500376B6F /* Constants.swift in Sources */,
 				BB79CDD71FCF2D8F00DDD43C /* MockStockWebService.swift in Sources */,
 				BB025A6B1FCE8A0300EA1691 /* StocksServiceEnumerations.swift in Sources */,
-				BB9D1D981FCCE83C00376B6F /* StockQuoteTests.swift in Sources */,
 				BB9D1DBC1FCCEAF300376B6F /* CustomStocksTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -525,6 +597,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		BB79CE251FCF63E300DDD43C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BB9D1D7E1FCCE83C00376B6F /* StockQuote */;
+			targetProxy = BB79CE241FCF63E300DDD43C /* PBXContainerItemProxy */;
+		};
 		BB9D1D951FCCE83C00376B6F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = BB9D1D7E1FCCE83C00376B6F /* StockQuote */;
@@ -552,6 +629,36 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		BB79CE271FCF63E300DDD43C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2E973Q2SJ9;
+				INFOPLIST_FILE = StockQuoteUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.creative.rd.StockQuoteUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = StockQuote;
+			};
+			name = Debug;
+		};
+		BB79CE281FCF63E300DDD43C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2E973Q2SJ9;
+				INFOPLIST_FILE = StockQuoteUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.creative.rd.StockQuoteUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = StockQuote;
+			};
+			name = Release;
+		};
 		BB9D1D9A1FCCE83C00376B6F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -726,6 +833,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		BB79CE261FCF63E300DDD43C /* Build configuration list for PBXNativeTarget "StockQuoteUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB79CE271FCF63E300DDD43C /* Debug */,
+				BB79CE281FCF63E300DDD43C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		BB9D1D7A1FCCE83C00376B6F /* Build configuration list for PBXProject "StockQuote" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
