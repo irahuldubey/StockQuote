@@ -71,7 +71,6 @@ class StocksHomeViewController: UITableViewController, ActivityIndicatorProtocol
           //Show Error in the UI
           self.showAlert(withMessage: error)
         }
-      
         self.tableView.reloadData()
         self.removeLoadingIndicator()
       }

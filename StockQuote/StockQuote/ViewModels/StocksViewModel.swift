@@ -15,6 +15,7 @@ internal final class StocksViewModel {
   ///Failure Binded Text
   internal private(set) var errorText: String?
   
+  /// Instance of StockWebServiceAPI, used as a dependency Injection
   private let stocksWebService: StockWebServiceAPI
   
   //MARK: - Initializer
@@ -38,8 +39,8 @@ internal final class StocksViewModel {
         switch stocksServiceResponse {
           case .success(let stocksQuotesArray):
             completion(stocksQuotesArray, nil)
-          case .failure(let weatherServiceError) :
-            completion([], weatherServiceError?.displayError)
+          case .failure(let stockServiceError) :
+            completion([], stockServiceError?.displayError)
         }
       }
     }

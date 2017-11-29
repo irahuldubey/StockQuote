@@ -10,13 +10,16 @@ import XCTest
 
 class RestServerManagerTests: XCTestCase {
   
+  /// is of type RestServerManager, property declaration
   var restServerManager: RestServerManager!
   
+  /// Perform any set up required before the execution of the test case
   override func setUp() {
     super.setUp()
     restServerManager = RestServerManager()
   }
   
+  /// Perform any set up required after the execution of the test case
   override func tearDown() {
     restServerManager = nil
     super.tearDown()

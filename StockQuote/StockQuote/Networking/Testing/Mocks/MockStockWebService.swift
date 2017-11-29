@@ -8,7 +8,8 @@
 
 import Foundation
 
-class MockStockWebService: StockWebServiceAPI {
+/// Class Description: MOCK class for the webservice calls from the client, wrapped in a protocol.
+final class MockStockWebService: StockWebServiceAPI {
   
   ///Create an instance of closure property
   var fetchStockPricesClosure: (( _ symbols: [String], _ completion: (StocksServiceResponse) -> ()) -> ())?
